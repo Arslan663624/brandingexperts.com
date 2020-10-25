@@ -540,7 +540,7 @@ border-color: #fcb800;
 	list-style: none;
 	color: white;
 	margin-top: 50px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	cursor: pointer;	
 }
 
