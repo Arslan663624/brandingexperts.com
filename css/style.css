@@ -1,5 +1,5 @@
 body {
-	font-family: sans-serif;
+	font-family: Apple Chancery, cursive;
 }
 
 
@@ -84,49 +84,60 @@ nav {
 
 /* =================== header started =================== */
 
-header {
-	position: relative;
-	background-color: black;
-	height: 50vw;	
-	width: 100%;
-	overflow: hidden;
-  }
-  
-  header video {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: 0;
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-  }
+.header {
+	background-image: url('../images/header_banner.jpg');
+	background-position: 50% top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #3c8a87;
+	padding-left: 10%;
+}
 
-  header .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background-color: black;
-	opacity: 0.5;
-	z-index: 1;
-  }
+.headerContentDiv {
+	color: white;
+	text-align: center;
+	max-width: 35%;
+	border-radius: 5px;
+	padding-top: 11vw;
+}
 
-  
-  @media (pointer: coarse) and (hover: none) {
-	header {
-	  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-	}
-	header video {
-	  display: none;
-	}
-  }
+.headerContentHeading {
+	font-size: 3.4vw;
+	text-transform: uppercase;
+}
+
+.headerContentPara {
+	font-size: 1.5vw;
+}
+
+.btnDiv {
+	text-align: center;
+	padding-top: 1vw;
+	padding-bottom: 50px;
+}
+
+.buyNowbtn {
+	color: #fcb800;
+	background-color: transparent;
+	border-color: #fcb800;
+	font-size: 1.3vw;
+	text-transform: uppercase;
+	padding: 3px 30px 3px 30px;
+	border-radius: 0;
+}
+
+.buyNowbtn:hover {
+	color: black;
+	background-color: #fcb800;
+	border-color: #fcb800;
+}
+
+.boyImg {
+	width: 25%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 @media screen and (max-width: 668px) {
 	.header {
@@ -270,50 +281,6 @@ header {
 	opacity: 1;
 }
 
-.modal-content{
-	background-color: #3c8a87;
-	color: white;
-	border-radius: 0;
-}
-
-.modal-header{
-	border-bottom: none;
-}
-
-.modalDismiss{
-	color: white; 
-	opacity: 1; 
-	font-size: 40px;
-}
-
-.modalTitle{
-	margin-top: 40px;
-	font-size: 20px;	
-	font-weight: 100;
-}
-
-.modalPrice{	
-	font-size: 20px;	
-	font-weight: 100;
-}
-
-.modalViewDetailBtn{
-	border-color: white; 
-	border-radius: 0; 
-	text-transform: uppercase; 
-	background-color: transparent;
-	margin-bottom: 5px;
-	margin-top: 10px;
-}
-
-.modalViewDetailBtn:hover{
-	background-color: #fcb800;
-	color: black;
-	border: #fcb800;
-	margin-bottom: 7px;
-	margin-top: 10px;
-}
-
 @media screen and (max-width: 440px) {
 	.newArrivalsHeading {
 		font-size: 28px;
@@ -351,6 +318,36 @@ header {
 }
 
 /* ======================= new arrivals products section ended ========================= */
+
+/* ======================= slider started ========================= */
+
+.slide1{
+	background-image: url('../images/alibaba.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.slide2{
+	background-image: url('../images/slide2.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.slide3{
+	background-image: url('../images/slide3.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.slideText{
+	color: #fcb800;
+	text-transform: uppercase;
+	margin-top: 21%;
+	margin-bottom: 20%;
+	text-align: center;
+}
+
+/* ======================= slider ended ========================= */
 
 
 /* ======================= trending products section started =========================== */
@@ -418,234 +415,3 @@ header {
 
 
 /* ================================== slider ended ======================== */
-
-
-
-/* ====================================== testinomial started ============================= */
-
-.demo{
-	background-image: url('../images/joggersbg.jpg');  
-	background-size: cover;
-	padding-top: 10%;               
-	padding-bottom: 1.77%;               
-}
-.testimonial{
-background: #fcb800;
-color: black;
-text-align: center;
-padding: 30px 30px 50px;
-margin: 0 15px 150px 0px;
-position: relative;
-
-}
-.testimonial:before,
-.testimonial:after{
-content: "";
-border-top: 40px solid #fcb800;
-border-right: 125px solid transparent;
-position: absolute;
-bottom: -40px;
-left: 0;
-}
-.testimonial:after{
-border-right: none;
-border-left: 125px solid transparent;
-left: auto;
-right: 0;
-}
-.testimonial .icon{
-display: inline-block;
-font-size: 80px;
-color: black;
-margin-bottom: 20px;
-opacity: 0.6;
-}
-.testimonial .description{
-font-size: 16px;
-color: black;
-text-align: justify;
-margin-bottom: 30px;
-opacity: 0.9;
-letter-spacing: -1px;
-}
-.testimonial .testimonial-content{
-width: 100%;
-position: absolute;
-left: 0;
-}
-.testimonial .pic{
-display: inline-block;
-border: 6px solid white;
-border-radius: 50%;
-box-shadow: 0 0 2px 2px #daad86;
-overflow: hidden;
-z-index: 1;
-position: relative;
-}
-.testimonial .pic img{
-width: 100%;
-height: auto;
-}
-.testimonial .title{
-font-size: 15px;
-font-weight: bold;
-color: white;
-text-transform: capitalize;
-margin: 0 0 5px 0;
-}
-.testimonial .post{
-display: block;
-font-size: 14px;
-color: white;
-}
-.owl-theme .owl-controls{
-margin-top: 60px;
-}
-.owl-theme .owl-controls .owl-page span{
-width: 32px;
-height: 10px;
-background: transparent;
-border: 2px solid #fcb800;
-margin: 5px;
-opacity: 1;
-}
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
-background: #fcb800;
-border-color: #fcb800;
-}
-.pic img{
-	width: 100px !important;
-	height: 50px;
-}
-
-.teamSocialLinks{
-	margin-top: 8px;
-}
-
-.teamFbSocialLink, .teamInstaSocialLink, .teamTwitterSocialLink{
-	color: white;
-	font-size: 24px;
-}
-
-/* ====================================== testinomial ended ============================= */
-
-/* ========================================= footer started ================================== */
-.footer{	
-	background-color: #3c8a87;
-}
-
-.footerPagesUl{
-	list-style: none;
-	color: white;
-	margin-top: 50px;
-	text-transform: capitalize;
-	cursor: pointer;	
-}
-
-.footerPagesTitle{
-	font-size: 30px;	
-	text-transform: capitalize;
-	margin-bottom: 20px;
-}
-
-.footerPagesLink{
-	text-decoration: none;
-	color: white;
-}
-
-.footerPagesLink:hover{
-	text-decoration: none;
-	color: white;
-}
-
-.footerBestSellingProductsTitle{
-	text-transform: none;
-	width: 200px;
-	height: 22px;	
-	overflow: hidden;	
-	white-space: nowrap;
-	text-overflow: ellipsis;		
-	float: left;
-}
-
-.img-thumbnail{
-	width: 40px; 
-	height: 40px;
-	margin-top: -8px;	
-	margin-bottom: 20px;
-}
-
-.footerSocialLinksList{
-	margin-bottom: 10px;
-}
-
-.footerSocialLinksIcons{
-	color: white;
-	font-size: 25px;
-	width: 20px;
-	height: 20px;
-	margin-right: 10px;	
-}
-
-.fbLink, .twitterLink, .instaLink, .gmailLink{
-	color: white;
-	text-decoration: none;		
-}
-
-.fbLink:hover, .twitterLink:hover, .instaLink:hover, .gmailLink:hover{
-	color: white;
-	text-decoration: none;
-}
-
-.gmailLink{
-	text-transform: lowercase;
-}
-
-.locationLink{
-	color: white;
-	text-decoration: none;
-}
-
-.locationLink:hover{
-	color: white;
-	text-decoration: none;
-}
-
-.fa-map-marker{
-	float: left;	
-	margin-top: 5px;	
-}
-
-.locationText{
-	margin-left: 20px;
-}
-
-.subscribeForm{
-	text-align: center;	
-}
-
-.formSubscribeButtonDiv{
-	text-align: center;	
-	margin-top: 10px;	
-}
-
-.formSubscribeButton{
-	border: 1px solid #fcb800;
-	background-color: white;
-	color: #fcb800;	
-	padding: 1px 10px 1px 10px;
-}
-
-.formSubscribeButton:hover{
-	background-color: #fcb800;
-	color: black;
-}
-
-#forminputfield{
-	border: 1px solid black;
-	background-color: #fcb800;
-	width: 90%;
-	margin-top: 10px;
-}
-/* ========================================= footer ended ================================== */
