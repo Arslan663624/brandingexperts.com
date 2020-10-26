@@ -1,46 +1,86 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+	outline:0;    
+	box-shadow: 0;
+}
 body {
-	font-family: sans-serif;
+	font-family: sans-serif;	
 }
 /* ========================== navbar header started======================= */
 .navbarHeader{
 	background-color: #3c8a87;
-	color: white;
-	padding-top: 15px;
-	padding-bottom: 15px;
-
+	color: white;	
 }
-.signUpButton{
+.logo{
+	width: 40px;
+	height: 40px;	
+	margin-left: 10px;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.logInButton{
 	float: right;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	color: white;
 	background-color: transparent;
 	border: none;
-	margin-top: 3px;
-	margin-right: 33px;
+	margin-top: 10px;
+	margin-right: 33px;	
 }
 .navbarHeaderSocialLinks{
 	float: right;
+	padding-top: 10px;
 }
+
+.navbarHeaderFbIconLink, .navbarHeaderTwitterIconLink, .navbarHeaderInstaIconLink{
+	color: white;
+	text-decoration: none;
+}
+
+.navbarHeaderFbIconLink:hover, .navbarHeaderTwitterIconLink:hover, .navbarHeaderInstaIconLink:hover{
+	color: white;
+	text-decoration: none;
+}
+
 .navbarHeaderFbIcon, .navbarHeaderTwitterIcon, .navbarHeaderInstaIcon{
 	color: white;
 	font-size: 30px;
 	padding-right: 10px;	
+	transition: all 0.3s ease-in-out 0s;
 }
 
-.sinUpModalLogo{
+.navbarHeaderFbIcon:hover, .navbarHeaderTwitterIcon:hover, .navbarHeaderInstaIcon:hover{
+	transform: scale(1.1765) translateZ(0px);
+}
+
+.loginModalLogo{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100px;
 	height: 100px;
+	cursor: pointer;
 }
 
-.signUpForm{
-	margin-top: 50px;
-	width: 100%;
+.loginForm{
+	margin-top: 50px;	
 }
 
-.signUpFormInputField{
+.loginFormInputField{
 	width: 100%;
 	margin-bottom: 10px;
 	background-color: #3c8a87;
@@ -48,23 +88,34 @@ body {
 	padding: 10px;
 	color: white;
 }
+.dontHaveAccount{
+	float: left;
+}
 
-.signUpFormButton{
+.signUpButtonOnloginForm{
+	background-color: transparent;
 	color: white;
-	background: transparent;
-	text-transform: uppercase;
-	border: 1px solid #fcb800;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-left: 25px;
-	padding-right: 25px;
+	border: none;
+}
+
+.forgetPasswordBtn{
+	float: right;
+	background-color: transparent;
+	border: none;
+	color: white;
+}
+
+.loginFormButton{			
+	text-transform: capitalize;
+	padding-left: 30px;
+	padding-right: 30px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-.signUpFormButton:hover{
+.loginFormButton:hover{
 	background-color: #fcb800;
 	color: black;
 }
@@ -98,10 +149,6 @@ nav {
 }
 .nav-item {
 	padding-right: 30px;
-}
-.logo{
-	width: 40px;
-	height: 40px;	
 }
 .dropdown .dropdown-menu {
 	background-color: transparent;
@@ -523,15 +570,15 @@ header .overlay {
 /* ========================================= footer started ================================== */
 .footer{
 	background-color: #3c8a87;
+	padding-top: 50px;
 }
-.footerPagesUl{
+.footerUl{
 	list-style: none;
-	color: white;
-	margin-top: 50px;
+	color: white;	
 	text-transform: capitalize;
 	cursor: pointer;
 }
-.footerPagesTitle{
+.footerHeading{
 	font-size: 30px;
 	text-transform: capitalize;
 	margin-bottom: 20px;
@@ -616,6 +663,6 @@ header .overlay {
 	border: 1px solid black;
 	background-color: #fcb800;
 	width: 90%;
-	margin-top: 10px;
+	margin-top: 10px;	
 }
 /* ========================================= footer ended ================================== */
