@@ -257,20 +257,20 @@ header .overlay {
 	color: black;
 	background-color: #fcb800;
 	font-size: 25px;
-	width: 170px;	
+	width: 220px;	
 	font-family: Apple Chancery, cursive;
 	text-transform: capitalize;
 	margin-top: 50px;
 	margin-left: 30px;
-	padding: 5px 5px;
+	padding: 8px 5px 8px 5px;
 }
 .newArrivalsHeading::after {
 	content: '';
-	border-top: 40px solid #fcb800;
-	border-right: 60px solid transparent;
+	border-top: 46px solid #fcb800;
+	border-right: 100px solid transparent;
 	position: relative;
-	left: 14px;
-	top: 38px;
+	left: 64px;
+	top: 41px;
 }
 .card {
 	cursor: pointer;
@@ -401,19 +401,19 @@ header .overlay {
 	color: black;
 	background-color: #fcb800;
 	font-size: 25px;
-	width: 120px;	
+	width: 220px;	
 	font-family: Apple Chancery, cursive;
 	text-transform: capitalize;	
 	margin-left: 30px;
-	padding: 5px 5px;
+	padding: 8px 5px 8px 5px;
 }
 .trendingHeading::after {
 	content: '';
-	border-top: 40px solid #fcb800;
-	border-right: 60px solid transparent;
+	border-top: 46px solid #fcb800;
+	border-right: 80px solid transparent;
 	position: relative;
-	left: 11px;
-	top: 38px;
+	left: 111px;
+	top: 41px;
 }
 @media screen and (max-width: 440px) {
 	.trendingHeading {
@@ -480,11 +480,6 @@ header .overlay {
 	margin-bottom: 30px;
 	opacity: 0.9;
 	letter-spacing: -1px;
-}
-.testimonial .testimonial-content{
-	width: 100%;
-	position: absolute;
-	left: 0;
 }
 .testimonial .pic{
 	display: inline-block;
