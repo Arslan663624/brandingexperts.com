@@ -256,8 +256,8 @@ header .overlay {
 	text-align: left;
 	color: black;
 	background-color: #fcb800;
-	font-size: 35px;
-	width: 240px;	
+	font-size: 25px;
+	width: 170px;	
 	font-family: Apple Chancery, cursive;
 	text-transform: capitalize;
 	margin-top: 50px;
@@ -266,11 +266,11 @@ header .overlay {
 }
 .newArrivalsHeading::after {
 	content: '';
-	border-top: 52px solid #fcb800;
-	border-right: 80px solid transparent;
+	border-top: 40px solid #fcb800;
+	border-right: 60px solid transparent;
 	position: relative;
-	left: 23px;
-	top: 51px;
+	left: 14px;
+	top: 38px;
 }
 .card {
 	cursor: pointer;
@@ -400,8 +400,8 @@ header .overlay {
 	text-align: left;
 	color: black;
 	background-color: #fcb800;
-	font-size: 35px;
-	width: 165px;	
+	font-size: 25px;
+	width: 120px;	
 	font-family: Apple Chancery, cursive;
 	text-transform: capitalize;	
 	margin-left: 30px;
@@ -409,11 +409,11 @@ header .overlay {
 }
 .trendingHeading::after {
 	content: '';
-	border-top: 52px solid #fcb800;
-	border-right: 90px solid transparent;
+	border-top: 40px solid #fcb800;
+	border-right: 60px solid transparent;
 	position: relative;
-	left: 15px;
-	top: 51px;
+	left: 11px;
+	top: 38px;
 }
 @media screen and (max-width: 440px) {
 	.trendingHeading {
@@ -540,7 +540,11 @@ header .overlay {
 /* ========================================= footer started ================================== */
 .footer{
 	background-color: #3c8a87;
-	padding-top: 50px;
+	padding-top: 50px;	
+}
+.footerUlRows{
+	padding-right: 50px;
+	padding-left: 50px;
 }
 .footerUl{
 	list-style: none;
