@@ -9,61 +9,105 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-	outline:0;    
-	box-shadow: 0;
+time, mark, audio, video, input {
+    margin:0px;
+    padding:0px;
+    border:0px;
+	outline:0px;    
+	box-shadow: 0px;
 }
 body {
 	font-family: sans-serif;	
 }
-/* ========================== navbar header started======================= */
-.navbarHeader{
-	background-color: #3c8a87;
-	color: white;	
+/* ==================== navbar strated ==================== */
+a {
+	color: #fcb800;
+}
+a:hover {
+	color: #fcb800;
+}
+nav {
+	background-color: transparent;
+	font-family: calibri;
+	font-size: 17px;	
 }
 .logo{
 	width: 40px;
 	height: 40px;	
-	margin-left: 10px;
+	float: left;
 	padding: 0;
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.logInButton{
-	float: right;
-	text-transform: capitalize;
-	color: white;
+.nav-item {
+	padding-right: 30px;
+}
+.dropdown-submenu {
+	position: relative;
+}
+.dropdown-submenu a::after {
+	transform: rotate(-90deg);
+	position: absolute;
+	right: 6px;
+	top: .8em;
+}
+.dropdown-submenu .dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-left: .1rem;
+	margin-right: .1rem;
+}
+.dropdown .dropdown-menu {
 	background-color: transparent;
 	border: none;
-	margin-top: 10px;
+	border-radius: 0px;
+	margin-top: 0px;
+}
+.dropdown .dropdown-menu .dropdown-submenu .dropdown-item {
+	background-color: transparent;
+	color: #fcb800;
+	border: none;
+	border-radius: 0px;
+}
+.dropdown .dropdown-menu .dropdown-submenu .dropdown-item:hover {
+	background-color: #3c8a87;
+	color: white;
+}
+.dropdown-item {
+	text-transform: capitalize;
+	text-align: left;
+	padding-left: 10px;
+}
+.logInButton{
+	float: right;
+	color: #fcb800;
+	text-transform: capitalize;	
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
 	margin-right: 33px;	
 }
-.navbarHeaderSocialLinks{
+.navbarSocialLinks{
 	float: right;
-	padding-top: 10px;
+	padding: 0;	
 }
 
-.navbarHeaderFbIconLink, .navbarHeaderTwitterIconLink, .navbarHeaderInstaIconLink{
-	color: white;
+.navbarFbIconLink, .navbarTwitterIconLink, .navbarInstaIconLink{	
 	text-decoration: none;
 }
 
-.navbarHeaderFbIconLink:hover, .navbarHeaderTwitterIconLink:hover, .navbarHeaderInstaIconLink:hover{
-	color: white;
+.navbarFbIconLink:hover, .navbarTwitterIconLink:hover, .navbarInstaIconLink:hover{	
 	text-decoration: none;
 }
 
-.navbarHeaderFbIcon, .navbarHeaderTwitterIcon, .navbarHeaderInstaIcon{
-	color: white;
+.navbarFbIcon, .navbarTwitterIcon, .navbarInstaIcon{	
 	font-size: 30px;
 	padding-right: 10px;	
 	transition: all 0.3s ease-in-out 0s;
 }
 
-.navbarHeaderFbIcon:hover, .navbarHeaderTwitterIcon:hover, .navbarHeaderInstaIcon:hover{
+.navbarFbIcon:hover, .navbarTwitterIcon:hover, .navbarInstaIcon:hover{
 	transform: scale(1.1765) translateZ(0px);
 }
 
@@ -119,68 +163,8 @@ body {
 	background-color: #fcb800;
 	color: black;
 }
-/* ========================== navbar header ended======================= */
-/* ==================== navbar strated ==================== */
-.dropdown-submenu {
-	position: relative;
-}
-.dropdown-submenu a::after {
-	transform: rotate(-90deg);
-	position: absolute;
-	right: 6px;
-	top: .8em;
-}
-.dropdown-submenu .dropdown-menu {
-	top: 0;
-	left: 100%;
-	margin-left: .1rem;
-	margin-right: .1rem;
-}
-a {
-	color: black;
-}
-a:hover {
-	color: black;
-}
-nav {
-	background-color: #fcb800;
-	font-family: calibri;
-	font-size: 17px;
-}
-.nav-item {
-	padding-right: 30px;
-}
-.dropdown .dropdown-menu {
-	background-color: transparent;
-	border: none;
-	border-radius: 0px;
-	margin-top: 0px;
-}
-.dropdown .dropdown-menu .dropdown-submenu .dropdown-item {
-	background-color: #fcb800;
-	color: black;
-	border: none;
-	border-radius: 0px;
-}
-.dropdown .dropdown-menu .dropdown-submenu .dropdown-item:hover {
-	background-color: #3c8a87;
-	color: white;
-}
-.dropdown-item {
-	text-transform: capitalize;
-	text-align: left;
-	padding-left: 10px;
-}
-@media screen and (max-width: 991px) {
-	.dropdownItem:hover div {
-		display: block;
-		position: relative;
-		left: 0;
-   }
-	.categoriesDropdown .dropdownItem:hover {
-		background-color: #fcb800;
-		color: black;
-   }
+.navbar-toggler{
+	color: #fcb800;
 }
 /* ================ navbar ended =================== */
 /* =================== header started =================== */
@@ -269,26 +253,24 @@ header .overlay {
 /* ======================= header ended =========================== */
 /* ======================= new arrivals products section started ========================= */
 .newArrivalsHeading {
-	text-align: center;
-	color: #3c8a87;
+	text-align: left;
+	color: black;
 	background-color: #fcb800;
-	font-size: 30px;
-	width: 195px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	font-size: 35px;
+	width: 240px;	
 	font-family: Apple Chancery, cursive;
 	text-transform: capitalize;
 	margin-top: 50px;
+	margin-left: 30px;
 	padding: 5px 5px;
 }
 .newArrivalsHeading::after {
 	content: '';
-	border-top: 46px solid #fcb800;
-	border-right: 70px solid transparent;
+	border-top: 52px solid #fcb800;
+	border-right: 80px solid transparent;
 	position: relative;
-	left: 8px;
-	top: 44px;
+	left: 23px;
+	top: 51px;
 }
 .card {
 	cursor: pointer;
@@ -415,26 +397,23 @@ header .overlay {
 /* ======================= new arrivals products section ended ========================= */
 /* ======================= trending products section started =========================== */
 .trendingHeading {
-	text-align: center;
-	color: #3c8a87;
+	text-align: left;
+	color: black;
 	background-color: #fcb800;
-	font-size: 30px;
-	width: 137px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	font-size: 35px;
+	width: 165px;	
 	font-family: Apple Chancery, cursive;
-	text-transform: capitalize;
-	margin-top: 50px;
+	text-transform: capitalize;	
+	margin-left: 30px;
 	padding: 5px 5px;
 }
 .trendingHeading::after {
 	content: '';
-	border-top: 46px solid #fcb800;
-	border-right: 56px solid transparent;
+	border-top: 52px solid #fcb800;
+	border-right: 90px solid transparent;
 	position: relative;
-	left: 7px;
-	top: 44px;
+	left: 15px;
+	top: 51px;
 }
 @media screen and (max-width: 440px) {
 	.trendingHeading {
@@ -450,28 +429,20 @@ header .overlay {
    }
 }
 /* ======================= trending products section ended =========================== */
-/* ================================== slider started ======================== */
-.sliderBg1 {
-	background-image: url('../images/founder_slider_img1.jpg');
-	background-size: 50% top;
-	background-repeat: no-repeat;
-	height: 1500px;
-}
-.sliderPrevHexagon {
-	fill: #428bca;
-	width: 2.999em;
-	height: 2.999em;
-}
-.sliderPrevHexagonBg {
-	fill: grey;
-}
-/* ================================== slider ended ======================== */
 /* ====================================== testinomial started ============================= */
 .demo{
 	background-image: url('../images/joggersbg.jpg');
 	background-size: cover;
 	padding-top: 10%;
 	padding-bottom: 1.77%;
+}
+.ourArchivesHeading{
+	color: #fcb800;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 50px;
 }
 .testimonial{
 	background: #fcb800;
@@ -531,14 +502,9 @@ header .overlay {
 .testimonial .title{
 	font-size: 15px;
 	font-weight: bold;
-	color: white;
+	color: black;
 	text-transform: capitalize;
 	margin: 0 0 5px 0;
-}
-.testimonial .post{
-	display: block;
-	font-size: 14px;
-	color: white;
 }
 .owl-theme .owl-controls{
 	margin-top: 60px;
@@ -559,12 +525,16 @@ header .overlay {
 	width: 100px !important;
 	height: 50px;
 }
-.teamSocialLinks{
+.visitorsSocialLinks{
 	margin-top: 8px;
 }
-.teamFbSocialLink, .teamInstaSocialLink, .teamTwitterSocialLink{
-	color: white;
+.visitorsFbSocialLink, .visitorsInstaSocialLink, .visitorsTwitterSocialLink{
+	color: black;	
 	font-size: 24px;
+	transition: all 0.3s ease-in-out 0s;
+}
+.visitorsFbSocialLink:hover, .visitorsInstaSocialLink:hover, .visitorsTwitterSocialLink:hover{
+	transform: scale(1.1765) translateZ(0px);
 }
 /* ====================================== testinomial ended ============================= */
 /* ========================================= footer started ================================== */
@@ -585,26 +555,34 @@ header .overlay {
 }
 .footerPagesLink{
 	text-decoration: none;
-	color: white;
+	color: white;	
 }
 .footerPagesLink:hover{
 	text-decoration: none;
 	color: white;
 }
+.footerPagesLi{
+	margin-bottom: 6px;
+}
+.footerBestSellingProducts{
+	display: inline-flex;
+}
 .footerBestSellingProductsTitle{
 	text-transform: none;
 	width: 200px;
-	height: 22px;
+	height: 25px;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	float: left;
+	padding-left: 10px;		
+	padding-top: 7px;
 }
 .img-thumbnail{
 	width: 40px;
 	height: 40px;
-	margin-top: -8px;
-	margin-bottom: 20px;
+	margin: 0;
+	padding: 0;
+	border: none;	
 }
 .footerSocialLinksList{
 	margin-bottom: 10px;
@@ -642,27 +620,18 @@ header .overlay {
 .locationText{
 	margin-left: 20px;
 }
-.subscribeForm{
-	text-align: center;
-}
-.formSubscribeButtonDiv{
-	text-align: center;
-	margin-top: 10px;
-}
-.formSubscribeButton{
-	border: 1px solid #fcb800;
-	background-color: white;
-	color: #fcb800;
-	padding: 1px 10px 1px 10px;
-}
-.formSubscribeButton:hover{
-	background-color: #fcb800;
-	color: black;
-}
 #forminputfield{
 	border: 1px solid black;
 	background-color: #fcb800;
-	width: 90%;
+	width: 100%;
 	margin-top: 10px;	
+	padding-left: 10px;
+}
+.formSubscribeButtonDiv{
+	text-align: left;	
+	margin-top: 10px;
+}
+.btn-warning{	
+	padding-right: 100px;
 }
 /* ========================================= footer ended ================================== */
