@@ -19,7 +19,8 @@
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.backgroundColor = "#fcb800";  
-    document.getElementById("navbarDropdownMenuLink").style.color = "black";
+    document.getElementById("navbarToggler").style.color = "black";
+    document.getElementById("navbarDropdownMenuLink").style.color = "black";    
     document.getElementById("dropdownMenu").style.color = "black";
     document.getElementById("nav-link").style.color = "black";   
     document.getElementById("nav-link-2").style.color = "black"; 
@@ -28,8 +29,12 @@ function scrollFunction() {
     document.getElementById("navbarTwitterIconLink").style.color = "black";
     document.getElementById("navbarInstaIconLink").style.color = "black";
     document.getElementById("logInButton").style.color = "black";
+    document.getElementById("dropdownMenu").style.backgroundColor = "#fcb800";
+    document.getElementById("secondDropdownMenu").style.backgroundColor = "#fcb800";    
+    document.getElementsByClassName("dropdownItem").style.color = "black";    
   } else {
     document.getElementById("navbar").style.background = "transparent";    
+    document.getElementById("navbarToggler").style.color = "#fcb800";
     document.getElementById("navbarDropdownMenuLink").style.color = "#fcb800";
     document.getElementById("dropdownMenu").style.color = "#fcb800";
     document.getElementById("nav-link").style.color = "#fcb800";    
@@ -39,5 +44,8 @@ function scrollFunction() {
     document.getElementById("navbarTwitterIconLink").style.color = "#fcb800";
     document.getElementById("navbarInstaIconLink").style.color = "#fcb800";
     document.getElementById("logInButton").style.color = "#fcb800";
+    document.getElementById("dropdownMenu").style.backgroundColor = "transparent";
+    document.getElementById("secondDropdownMenu").style.backgroundColor = "transparent";
+    document.getElementsByClassName("dropdownItem").style.color = "#fcb800";    
   }
 };      

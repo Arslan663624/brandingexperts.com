@@ -134,9 +134,13 @@ nav {
 	margin-top: 0px;
 }
 
+.dropdown:hover .dropdownMenu{
+	display: block;
+}
+
+
 .dropdown .dropdown-menu .dropdown-submenu .dropdown-item {
-	background-color: transparent;
-	color: #fcb800;
+	background-color: transparent;	
 	border: none;
 	border-radius: 0px;
 }
@@ -144,6 +148,14 @@ nav {
 .dropdown .dropdown-menu .dropdown-submenu .dropdown-item:hover {
 	background-color: #3c8a87;
 	color: white;
+}
+
+.dropdown .dropdown-menu .dropdown-submenu:hover .secondDropdownMenu{
+	display: block;
+}
+
+.dropdown .dropdown-menu .dropdown-submenu .secondDropdownMenu .dropdown-submenu:hover .thirdDropdownMenu{
+	display: block;
 }
 
 .dropdown-item {
@@ -293,62 +305,6 @@ header .overlay {
 	z-index: 1;
 }
 
-@media (pointer: coarse) and (hover: none) {
-	header {
-		background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-	}
-	header video {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 668px) {
-	.header {
-		padding-bottom: 0%;
-	}
-	.headerContentPara {
-		font-size: 2vw;
-	}
-	.btnDiv {
-		padding: 0;
-	}
-	.buyNowbtn {
-		font-size: 2vw;
-	}
-}
-
-@media screen and (max-width: 530px) {
-	.header {
-		padding-top: 2%;
-	}
-	.headerContentDiv {
-		max-width: 40%;
-	}
-	.headerContentPara {
-		font-size: 2.5vw;
-	}
-	.boyImg {
-		width: 30%;
-	}
-}
-
-@media screen and (max-width: 375px) {
-	.headerContentDiv {
-		padding-top: 20%;
-		max-width: 55%;
-	}
-	.headerContentPara {
-		font-size: 2.9vw;
-	}
-	.buyNowbtn {
-		font-size: 2.5vw;
-	}
-	.boyImg {
-		width: 40%;
-	}
-}
-
-
 /* ======================= header ended =========================== */
 
 
@@ -440,6 +396,11 @@ header .overlay {
 .fa-shopping-cart {
 	color: white;
 	opacity: 1;
+}
+
+.modalImage{
+	width: 200px;
+    height: 220px;
 }
 
 .modal-content {
@@ -816,6 +777,8 @@ header .overlay {
 	width: 100%;
 	margin-top: 10px;
 	padding-left: 10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .formSubscribeButtonDiv {
@@ -823,9 +786,8 @@ header .overlay {
 	margin-top: 10px;
 }
 
-.btn-warning {
-	padding-right: 100px;
+.subscribeBtn {
+	width: 50%;
 }
-
 
 /* ========================================= footer ended ================================== */
