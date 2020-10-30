@@ -48,4 +48,9 @@ function scrollFunction() {
     document.getElementById("secondDropdownMenu").style.backgroundColor = "transparent";
     document.getElementsByClassName("dropdownItem").style.color = "#fcb800";    
   }
-};      
+}; 
+
+
+function whishlistbtn(){
+  document.getElementById("hearticon").style.color = "red";
+};

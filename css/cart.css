@@ -70,7 +70,7 @@ video,
 input {
 	margin: 0px;
 	padding: 0px;
-	border: 0px;
+	border: 0px;	
 	outline: 0px;
 	box-shadow: 0px;
 }
@@ -83,17 +83,17 @@ body {
 /* ==================== navbar strated ==================== */
 
 a {
-	color: black;
+	color: #fcb800;
 }
 
 a:hover {
-	color: black;
+	color: #fcb800;
 }
 
 nav {
-	background-color: #fcb800;
+	background-color: transparent;
 	font-family: calibri;
-	font-size: 17px;	
+	font-size: 17px;
 }
 
 .logo {
@@ -140,8 +140,7 @@ nav {
 
 
 .dropdown .dropdown-menu .dropdown-submenu .dropdown-item {
-	background-color: #fcb800;	
-	color: black;
+	background-color: transparent;	
 	border: none;
 	border-radius: 0px;
 }
@@ -167,7 +166,7 @@ nav {
 
 .logInButton {
 	float: right;
-	color: black;
+	color: #fcb800;
 	text-transform: capitalize;
 	background-color: transparent;
 	border: none;
@@ -269,130 +268,6 @@ nav {
 
 /* ================ navbar ended =================== */
 
-/* ==================== prodcut detail started ========================= */
-.productTitle{
-    color: black;
-    font-size: 20px;
-    margin-top: 20px;
-}
-.fa-star{
-    color: #fcb800;
-}
-.productPrice{
-    color: black;
-    font-size: 22px;
-    font-weight: bold;    
-}
-.productImage{
-    width: 100%;
-	height: 70%;	
-}
-#blackimage{
-	display: none;
-}
-#whiteimage{
-	display: none;
-}
-.blackColor, .maroonColor, .whiteColor{
-    width: 40px;
-    height: 40px;        
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;    
-    z-index: 11111;
-    cursor: pointer;
-}
-.maroonColor{    
-	background: #c22959;    
-	border: 4px solid #fcb800;
-}
-.blackColor{    
-    background: black;        
-}
-.whiteColor{
-	background: rgb(228, 223, 223);
-}
-.buyNowBtn{    
-    float: left;
-    width: 45%;
-    font-weight: bold;
-    padding-top: 10px; 
-    padding-bottom: 10px;
-    margin-top: 20px;
-}
-.buyNowBtn:hover{
-    background-color: #3c8a87;
-    color: white;
-    border-color: #3c8a87;
-}
-.addToCartBtn{     
-    float: right;   
-    width: 45%;
-    font-weight: bold;
-    padding-top: 10px; 
-    padding-bottom: 10px;
-    margin-top: 20px;
-    background-color: #3c8a87;
-    color: white;
-    border-color: #3c8a87;
-}
-.addToCartBtn:hover{
-    background-color: #fcb800;
-    color: black;
-    border-color: #fcb800;
-}
-.magnifyarea { /* CSS to add shadow to magnified image. Optional */
-	box-shadow: 5px 5px 7px #818181;
-	-webkit-box-shadow: 5px 5px 7px #818181;
-	-moz-box-shadow: 5px 5px 7px #818181;	
-	background: white;		
-}
-
-.targetarea { /* CSS for container div(s) of the zoomable image */
-	/* width: 325px;  wide or wider than the widest zoomable image  */
-	/* height: 338px;  high or higher than the tallest zoomable image  */	
-	margin-top:3px;
-	width: 100%;
-	height: 100%;
-}
-
-#two { /* Added CSS for second target div of zoomable images */
-	height: 243px; /* high or higher than the tallest zoomable image */
-}
-
-.targetarea img { /* zoomable image */
-	margin: auto; /* for horizontal centering */
-	display: block; /* also for horizontal centering */
-	position: relative; /* along with on the fly calculations in script, for vertical centering */
-	border-width: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.thumbs { /* divs holding the trigger links - styles optional, used here to center their links below their respective zoomable image */
-	padding-top: 25px;
-	/* width: 325px; */
-	text-align: center;
-}
-
-.thumbs a { /* trigger links on the thumbnail images */
-	text-decoration: none; /* avoid underlines of images, text or spaces in these links */
-}
-
-.thumbs img { /* trigger images - the thumbnails used to load new zoomable images into the targetarea */
-	border-width: 0; /* avoid default borders in some browsers */
-}
-
-@media screen and (max-width: 1242px) {
-	.magnifyarea{
-		position: absolute !important;		
-		left: 0 !important;
-		width: 400px !important;
-		height: 400px !important;
-	}
-}
-/* ==================== prodcut detail ended ========================= */
 /* ========================================= footer started ================================== */
 
 .footer {
@@ -523,12 +398,6 @@ nav {
 
 .subscribeBtn {
 	width: 50%;
-}
-
-@media screen and (max-width: 375px) {
-	.gmailLink{
-		font-size: 12px;
-	}
 }
 
 /* ========================================= footer ended ================================== */
