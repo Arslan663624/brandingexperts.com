@@ -269,7 +269,12 @@ nav {
 /* ================ navbar ended =================== */
 
 
-/* ==================== prodcut detail started ========================= */
+/* ==================== product detail started ========================= */
+
+.productDetailContainer{
+	margin-top: 130px; 
+	margin-bottom: 100px;	
+}
 
 .productTitle {
 	color: black;
@@ -285,19 +290,6 @@ nav {
 	color: black;
 	font-size: 22px;
 	font-weight: bold;
-}
-
-.productImage {
-	width: 100%;
-	height: 70%;
-}
-
-#blackimage {
-	display: none;
-}
-
-#whiteimage {
-	display: none;
 }
 
 .blackColor,
@@ -372,8 +364,8 @@ nav {
 	/* width: 325px;  wide or wider than the widest zoomable image  */
 	/* height: 338px;  high or higher than the tallest zoomable image  */
 	margin-top: 3px;
-	width: 100%;
-	height: 100%;
+	width: auto;
+	height: auto;
 }
 
 #two {
@@ -428,10 +420,14 @@ nav {
 		width: 250px !important;
 		height: 350px !important;
 	}
+	.productDetailContainer{
+		display: flex;
+		flex-direction: column-reverse;
+	}
 }
 
 
-/* ==================== prodcut detail ended ========================= */
+/* ==================== product detail ended ========================= */
 
 
 /* ========================================= footer started ================================== */
@@ -566,9 +562,9 @@ nav {
 	width: 50%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.gmailLink {
-		font-size: 12px;
+		font-size: 10px;
 	}
 }
 

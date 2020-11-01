@@ -1,17 +1,53 @@
 function marooncolor() {       
        document.getElementById("marooncolor").style.border = "4px solid #fcb800";              
        document.getElementById("blackcolor").style.border = "none";       
-       document.getElementById("whitecolor").style.border = "none";
+	   document.getElementById("whitecolor").style.border = "none";
+	   document.getElementById("maroonproduct").style.border = "none";
+	   document.getElementById("blackproduct").style.border = "none";    
+	   document.getElementById("whiteproduct").style.border = "none";
 };
 
-function blackcolor(){    
+function blackcolor() {    
     document.getElementById("blackcolor").style.border = "4px solid #fcb800";    
     document.getElementById("marooncolor").style.border = "none";    
-    document.getElementById("whitecolor").style.border = "none";    
+	document.getElementById("whitecolor").style.border = "none";    
+	document.getElementById("maroonproduct").style.border = "none";
+	document.getElementById("blackproduct").style.border = "none";    
+	document.getElementById("whiteproduct").style.border = "none";
 };
 
-function whitecolor(){    
+function whitecolor() {    
     document.getElementById("whitecolor").style.border = "4px solid #fcb800";    
+    document.getElementById("blackcolor").style.border = "none";    
+	document.getElementById("marooncolor").style.border = "none";
+	document.getElementById("maroonproduct").style.border = "none";
+	document.getElementById("blackproduct").style.border = "none";    
+	document.getElementById("whiteproduct").style.border = "none";
+};
+
+function maroonproduct() {
+	document.getElementById("maroonproduct").style.border = "2px solid #fcb800";	
+	document.getElementById("blackproduct").style.border = "none";    
+	document.getElementById("whiteproduct").style.border = "none";
+	document.getElementById("whitecolor").style.border = "none";    
+    document.getElementById("blackcolor").style.border = "none";    
+    document.getElementById("marooncolor").style.border = "none";
+};
+
+function blackproduct() {
+	document.getElementById("blackproduct").style.border = "2px solid #fcb800";	
+	document.getElementById("maroonproduct").style.border = "none";    
+	document.getElementById("whiteproduct").style.border = "none";
+	document.getElementById("whitecolor").style.border = "none";    
+    document.getElementById("blackcolor").style.border = "none";    
+    document.getElementById("marooncolor").style.border = "none";
+};
+
+function whiteproduct() {
+	document.getElementById("whiteproduct").style.border = "2px solid #fcb800";	
+	document.getElementById("blackproduct").style.border = "none";    
+	document.getElementById("maroonproduct").style.border = "none";
+	document.getElementById("whitecolor").style.border = "none";    
     document.getElementById("blackcolor").style.border = "none";    
     document.getElementById("marooncolor").style.border = "none";
 };

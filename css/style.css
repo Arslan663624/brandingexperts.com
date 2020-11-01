@@ -517,10 +517,10 @@ header .overlay {
 	}
 	.trendingHeading::after {
 		content: '';
-		border-top: 38px solid #fcb800;
-		border-right: 50px solid transparent;
+		border-top: 43px solid #fcb800;
+		border-right: 60px solid transparent;
 		left: 6px;
-		top: 36px;
+		top: 38px;
 	}
 }
 
@@ -788,6 +788,12 @@ header .overlay {
 
 .subscribeBtn {
 	width: 50%;
+}
+
+@media screen and (max-width: 425px) {
+	.gmailLink {
+		font-size: 10px;
+	}
 }
 
 /* ========================================= footer ended ================================== */
