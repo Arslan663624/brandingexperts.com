@@ -1,27 +1,18 @@
-   function showmaroonproduct() {
-       document.getElementById("maroonimage").style.display = "block";
-       document.getElementById("marooncolor").style.border = "4px solid #fcb800";       
-       document.getElementById("blackimage").style.display = "none";
-       document.getElementById("blackcolor").style.border = "none";
-       document.getElementById("whiteimage").style.display = "none";
+function marooncolor() {       
+       document.getElementById("marooncolor").style.border = "4px solid #fcb800";              
+       document.getElementById("blackcolor").style.border = "none";       
        document.getElementById("whitecolor").style.border = "none";
 };
 
-function showblackproduct(){
-    document.getElementById("blackimage").style.display = "block";
-    document.getElementById("blackcolor").style.border = "4px solid #fcb800";
-    document.getElementById("maroonimage").style.display = "none";
-    document.getElementById("marooncolor").style.border = "none";
-    document.getElementById("whiteimage").style.display = "none";
+function blackcolor(){    
+    document.getElementById("blackcolor").style.border = "4px solid #fcb800";    
+    document.getElementById("marooncolor").style.border = "none";    
     document.getElementById("whitecolor").style.border = "none";    
 };
 
-function showwhiteproduct(){
-    document.getElementById("whiteimage").style.display = "block";
-    document.getElementById("whitecolor").style.border = "4px solid #fcb800";
-    document.getElementById("blackimage").style.display = "none";
-    document.getElementById("blackcolor").style.border = "none";
-    document.getElementById("maroonimage").style.display = "none";
+function whitecolor(){    
+    document.getElementById("whitecolor").style.border = "4px solid #fcb800";    
+    document.getElementById("blackcolor").style.border = "none";    
     document.getElementById("marooncolor").style.border = "none";
 };
 
@@ -424,19 +415,7 @@ jQuery.noConflict();
 
 
 
-jQuery(document).ready(function($){
-
-	// $('#image1').addimagezoom({ // single image zoom
-		// zoomrange: [3, 10],
-		// magnifiersize: [300,300],
-		// magnifierpos: 'right',
-		// cursorshade: true,
-		// largeimage: 'hayden.jpg' //<-- No comma after last option!
-	// })
-
-
-	// $('#image2').addimagezoom() // single image zoom with default options
-	
+jQuery(document).ready(function($){		
 	$('#multizoom1').addimagezoom({ // multi-zoom: options same as for previous Featured Image Zoomer's addimagezoom unless noted as '- new'
 		descArea: '#description', // description selector (optional - but required if descriptions are used) - new
 		speed: 100, // duration of fade in for new zoomable images (in milliseconds, optional) - new
@@ -448,13 +427,6 @@ jQuery(document).ready(function($){
 		cursorshadecolor: '#fdffd5',
 		cursorshade: true //<-- No comma after last option!
 	});
-	
-	// $('#multizoom2').addimagezoom({ // multi-zoom: options same as for previous Featured Image Zoomer's addimagezoom unless noted as '- new'
-		// descArea: '#description2', // description selector (optional - but required if descriptions are used) - new
-		// disablewheel: true // even without variable zoom, mousewheel will not shift image position while mouse is over image (optional) - new
-				//^-- No comma after last option!	
-	// });
-	
 })
 
 // ============================== POWER ZOOMER ENDED ===================================
