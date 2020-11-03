@@ -268,143 +268,59 @@ nav {
 
 
 /* ================ navbar ended =================== */
-
-/* ================= table started ================== */
-.tableContainer{
-	margin-top: 150px;
-	margin-bottom: 150px;
-	padding-top: 10px;
-	padding-bottom: 50px;
-	padding-left: 0;
-	padding-right: 0;
-	box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .16);	
+/* ================ form section started ===========*/
+.formContainer{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .16);
+    color: gray;
+    text-transform: capitalize;
 }
 
-.shoppingCartHeading {
-	text-align: left;
-	color: white;
-	background-color: #3c8a87;
-	font-size: 25px;
-	width: 200px;
-	font-family: Apple Chancery, cursive;
-	text-transform: capitalize;	
-	margin-left: 10px;
-	margin-bottom: 10px;
-	padding: 8px 5px 8px 5px;
+label{
+    margin-top: 20px;    
 }
 
-.shoppingCartHeading::after {
-	content: '';
-	border-top: 46px solid #3c8a87;
-	border-right: 80px solid transparent;
-	position: relative;
-	left: 31px;
-	top: 41px;
+input{
+    border-bottom: 2px solid gray;
+    width: 100%;        
 }
 
-@media screen and (max-width: 440px) {
-	.shoppingCartHeading {
-		font-size: 28px;
-		width: 180px;
-		padding: 3px 3px 3px 3px;
-	}
-	.shoppingCartHeading::after {
-		content: '';
-		border-top: 40px solid #3c8a87;
-		border-right: 50px solid transparent;
-		left: 6px;
-		top: 40px;
-	}
-}
-
-@media screen and (max-width: 375px) {
-	.shoppingCartHeading {
-		font-size: 23px;
-		width: 150px;
-	}
-	.shoppingCartHeading::after {
-		content: '';
-		border-top: 34px solid #3c8a87;
-		border-right: 50px solid transparent;
-		left: 6px;
-		top: 34px;
-	}
-}
-
-th,td{
-	text-transform: capitalize;	
-	padding: 5px 50px 5px 50px;		
-	border: 1px solid black;		
-}
-
-.fa-times-circle{
-	cursor: pointer;
-}
-
-.checkoutBtn{
-	float: right;
-	text-transform: capitalize;
-	background-color: #3c8a87;
-	color: white;
-	border-color: #3c8a87;
-	margin-top: 40px;
-	margin-right: 20px;
-	padding: 5px 70px 5px 70px;
-}
-
-.checkoutBtn:hover{
-	background-color: #3c8a87;
-	color: white;
-	border-color: #3c8a87;
-}
-
-.checkoutBtn:focus{
-	background-color: #3c8a87;
-	color: white;
-	border-color: #3c8a87;
-	box-shadow: none;
-}
-
-.modal-content{
-	background-color: #3c8a87;
-}
-
-.modal-header{
-	border-bottom: none;
-}
-
-.modalDismiss:focus{	
-	outline: none;	
-}
-
-.creditCardImg{
-	width: 70px;
-	height: 50px;
-	cursor: pointer;
+.cityLabel{
 	float: left;
+	margin: 0;	
+	padding: 0;	
+	margin-top: 20px;
 }
 
-.payPalCardImg{
-	width: 70px;
-	height: 50px;
-	cursor: pointer;
-	margin-left: 20px;
+.cityInputField{
+	float: left;
+	width: 30%;
+	margin: 0;
+	padding: 0;
+	margin-top: 24px;
+	margin-left: -30px;
 }
 
-.masterCardImg{
-	width: 100px;
-	height: 50px;
-	cursor: pointer;
-	margin-left: 10px;
+.stateLabel{
+	float: left;
+	margin: 0;	
+	padding: 0;		
+	margin-left: 30px;
 }
 
-.payoneerCardImg{
-	width: 70px;
-	height: 50px;
-	cursor: pointer;
+.stateInputField{
+	float: left;
+	width: 30%;
+	margin: 0;	
+	padding: 0;
+	margin-left: 30px;
 }
-/* ================= table ended ================== */
 
+
+
+
+/* ================ form section ended ===========*/
 /* ========================================= footer started ================================== */
 
 .footer {

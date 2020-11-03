@@ -459,7 +459,7 @@ jQuery(document).ready(function($){
 		imagevertcenter: true, // zoomable image centers vertically in its container (optional) - new
 		magvertcenter: true, // magnified area centers vertically in relation to the zoomable image (optional) - new
 		zoomrange: [2, 10],
-		magnifiersize: [600,600],		
+		magnifiersize: [350,350],		
 		cursorshadecolor: '#fdffd5',
 		cursorshade: true //<-- No comma after last option!
 	});

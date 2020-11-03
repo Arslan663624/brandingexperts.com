@@ -391,6 +391,10 @@ header .overlay {
 	color: black;
 }
 
+.detailBtn:focus {
+	outline: none;
+}
+
 .fa-eye,
 .fa-heart-o,
 .fa-shopping-cart {
