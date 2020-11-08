@@ -800,4 +800,21 @@ header .overlay {
 	}
 }
 
+.scroll-top{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 99;
+	background: black;
+	color: white;	
+	padding: 15px;
+	font-weight: bold;
+	line-height: normal;
+	border: none;	
+}
+
+.scroll-top:focus{	
+	outline: none;
+}
+
 /* ========================================= footer ended ================================== */
