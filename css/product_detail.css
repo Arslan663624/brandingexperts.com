@@ -271,6 +271,18 @@ nav {
 
 /* ==================== product detail started ========================= */
 
+.container-md{
+	display: none;
+}
+
+#appleIhponeSe:target{
+	display: block;
+}
+
+#bestHandsfreeHifi:target{
+	display: block;
+}
+
 .productDetailContainer{
 	margin-top: 130px; 
 	margin-bottom: 100px;	
