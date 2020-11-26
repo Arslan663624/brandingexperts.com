@@ -269,6 +269,10 @@ nav {
 	color: #fcb800;
 }
 
+.navbar-toggler:focus {
+	outline: none;
+}
+
 
 /* ================ navbar ended =================== */
 
