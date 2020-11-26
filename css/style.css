@@ -175,6 +175,10 @@ nav {
 	margin-right: 33px;
 }
 
+.logInButton:focus {
+	outline: none;
+}
+
 .navbarSocialLinks {
 	float: right;
 	padding: 0;
